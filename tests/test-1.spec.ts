@@ -7,7 +7,7 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'First Name' }).click();
   await page.getByRole('textbox', { name: 'First Name' }).fill('kezia');
   await page.getByRole('textbox', { name: 'First Name' }).press('Tab');
-  await page.getByRole('textbox', { name: 'Last Name' }).fill('grace');
+  await page.getByRole('textbox', { name: 'Last Name' }).fill('grace test');
   await page.getByRole('textbox', { name: 'name@example.com' }).click();
   await page.getByRole('textbox', { name: 'name@example.com' }).fill('k12@gmail.com');
   await page.getByText('Male', { exact: true }).click();
